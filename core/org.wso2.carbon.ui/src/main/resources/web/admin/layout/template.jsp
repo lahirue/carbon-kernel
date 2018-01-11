@@ -76,8 +76,7 @@
         }
 	}
 	//read web application's title if it's set on product.xml
-    String webAdminConsoleTitle = (String) config.getServletContext().getAttribute(CarbonConstants.PRODUCT_XML_WSO2CARBON +
-            CarbonConstants.PRODUCT_XML_WEB_ADMIN_CONSOLE_TITLE);
+    String webAdminConsoleTitle = "Metadata Portal Sri Lanka";
 %>
 <head>
     <meta http-equiv="content-type" content="text/html;charset=utf-8"/>

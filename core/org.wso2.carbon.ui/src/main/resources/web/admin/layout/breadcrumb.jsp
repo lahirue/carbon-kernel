@@ -32,23 +32,7 @@
 
 			</table>
 			</td>
-<%
-    String requestURI = request.getHeader("Referer");
-    if (requestURI != null && requestURI.indexOf("?") > 0) {
-        requestURI = requestURI.substring(0, requestURI.indexOf("?"));
-    } else {
-        requestURI = "";
-    }
-    requestURI = "blah";
-    if (requestURI.endsWith("/admin/login.jsp")) { %>
-            <td class="page-header-help"><a href="../docs/signin_userguide.html"
-				target="_blank"><fmt:message key="component.help" /></a></td>
-<% } else if (requestURI.endsWith("/admin/error.jsp")) { %>
-            <td class="page-header-help"></td>
-<% } else { %>
-			<td class="page-header-help"><a href="./docs/userguide.html"
-				target="_blank"><fmt:message key="component.help" /></a></td>
-<% } %>
+
 		</tr>
 	</table>
 </fmt:bundle>

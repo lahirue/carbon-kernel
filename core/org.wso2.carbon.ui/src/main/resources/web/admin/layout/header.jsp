@@ -55,7 +55,7 @@
             <%@include file="announcements.jsp"%>
         </div>
         <div class="header-links">
-		<div class="right-links">            
+		<div class="right-links">
 			<ul>
 		                <%
 		                    Boolean authenticated = (Boolean) request.getSession().getAttribute("authenticated");
@@ -89,7 +89,7 @@
                                 }
                         %>
                         <%
-                            if (authenticated != null && authenticated.booleanValue() && 
+                            if (authenticated != null && authenticated.booleanValue() &&
                                 MultitenantConstants.SUPER_TENANT_DOMAIN_NAME.equals(domainName)) {
                                 if (!CarbonUtils.isRunningOnLocalTransportMode()) {
                                     String remoteServerURL = (String) request.getSession().getAttribute(CarbonConstants.SERVER_URL);
@@ -113,7 +113,7 @@
                                             }
                                         }
                                         if (!remoteServerURL.equals(frontEndServerURL)) {
-   
+
                         %>
                                 <li class="middle">
                                     <label id="logged-user">
@@ -143,22 +143,10 @@
 		                </li>
 		                <%  } %>
 		                <li class="middle">|</li>
-		                <li class="middle">
-		                    <a target="_blank" href="<%=userGuideURL %>"><fmt:message key="docs"/></a>
-		                </li>
+
 				<li class="middle">|</li>
-				<%
-				String aboutPageURL = "";
-				if(CarbonUIUtil.isContextRegistered(config,"/product/")){
-					aboutPageURL = "../product/about.html";
-				}else{
-					//switch to carbon about page
-					aboutPageURL = "../docs/about.html";
-				}
-				%>
-		                <li class="left">
-		                    <a target="_blank" href="<%=aboutPageURL %>"><fmt:message key="about"/></a>
-		                </li>
+
+
 		            </ul>
 		</div>
         </div>

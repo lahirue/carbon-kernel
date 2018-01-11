@@ -45,8 +45,7 @@
 %>
     <div id="middle">
         <%
-            String serverName = CarbonUIUtil
-        						.getServerConfigurationProperty("Name");
+            String serverName = "Metadata Portal Sri Lanka";
         %>
         <h2>
             <fmt:message key="carbon.server.home">

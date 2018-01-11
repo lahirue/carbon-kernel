@@ -1444,3 +1444,9 @@ label.error{
     padding-left:5px;
     text-align:right;
 }
+#region1_manage_menu,#region1_identity_menu{
+display: none !important;
+}
+#region3_registry_menu {
+	display: none !important;
+}

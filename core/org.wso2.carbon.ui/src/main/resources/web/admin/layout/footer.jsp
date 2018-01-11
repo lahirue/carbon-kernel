@@ -19,7 +19,7 @@
 <div id="footer-div">
 	<div class="footer-content">
 		<div class="copyright">
-		    &copy; 2005 - 2016 WSO2 Inc. All Rights Reserved.
+			Copyright © United Nations Development Programme 2017.
 		</div>
 		<!--div class="poweredby">
 		</div-->
